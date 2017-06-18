@@ -13,31 +13,37 @@
 #### webpack-dev-server errors overlay (https://webpack.js.org/configuration/dev-server/#devserver-overlay)
 
 ## Chapter Two: Getting into React
-### Install react and react-dom
+### Install react, react-dom, babel-core, babel-loader, babel-preset-es2015, babel-preset-react, .babelrc
+### Create App, form and resultsList components
 ### State vs Props (load sync data): tvshows grid + click to see title
 ### Load async data
-## Testing: Jest (snapshot testing + enzyme + coverage and thresholds)
 
-## Chapter Three: TvShow Catalogue App
+## Chapter Three: Testing React
+### Jest
+### enzyme
+### snapshot testing
+### code coverage (+ thresholds)
+
+## Chapter Four: TvShow Catalogue App
 ## Code organization: config, services, plugins (fetch), containers vs. components
 ### Home page (component local state): lifecycle hooks
 ### Routing (react-router + redux-first-router after Redux)
 ### TvShow page + Season page
 ### Code splitting (AsyncRoute)
 
-## Chapter Four: Say hello to Redux
+## Chapter Five: Say hello to Redux
 ### Store + Reducers + Actions
 ### react-redux (connecting things)
 ### Redux DevTools
 
-## Chapter Five: Async Redux
+## Chapter Six: Async Redux
 ### Thunks vs Sagas
 ### components local state to store
 ### Testing Redux
 
-## Chapter Six: Build for production
+## Chapter Seven: Build for production
 ### webpack-stats, bundle analyzer, https://webpack.github.io/analyse/
 
-## Chapter Seven: Preact + Inferno
-
 ## Chapter Eight: Server side rendering
+
+## Chapter Nine: Preact + Inferno
