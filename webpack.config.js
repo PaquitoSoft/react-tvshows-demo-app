@@ -25,6 +25,12 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				enforce: 'pre',
+				include: path.resolve(__dirname, 'src', 'app'),
+				test: /\.js$/,
+				loader: 'eslint-loader'
+			},
+			{
 				include: path.resolve(__dirname, 'src', 'app'),
 				test: /\.js$/,
 				loader: 'babel-loader'
