@@ -23,6 +23,8 @@
 ### enzyme (npm i enzyme react-test-renderer)
 ### jest watch mode
 ### snapshot testing (npm i enzyme-to-json) - first snapshot creation
+### Testing callbacks (mocks): https://facebook.github.io/jest/docs/mock-functions.html#content
+### Async testing
 ### code coverage (+ thresholds)
 
 ## Chapter Four: TvShow Catalogue App

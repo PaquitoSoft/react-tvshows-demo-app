@@ -32,6 +32,7 @@ module.exports = {
             "error",
             "always"
         ],
+		"no-debugger": 1,
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
         "react/prop-types": "error"

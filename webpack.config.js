@@ -17,7 +17,7 @@ module.exports = {
 		contentBase: path.resolve(__dirname, 'src'),
 		compress: true,
 		overlay: {
-			warnings: true,
+			warnings: false,
 			errors: true
 		}
 	},

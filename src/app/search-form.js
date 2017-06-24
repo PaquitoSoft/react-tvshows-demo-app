@@ -2,12 +2,23 @@ import React from 'react';
 import { func } from 'prop-types';
 
 function SearchForm({ onSubmit }) {
+	let input;
+
 	return (
 		<form onSubmit={e => {
 			e.preventDefault();
-			onSubmit(e.target.querySelector('[name="username"]').value);
+			if (input.value.length) {
+				onSubmit(input.value);
+			}
 		}}>
-			<input type="text" name="username" size="40" autoFocus placeholder="Type a GitHub user account name" />
+			<input
+				type="text"
+				name="username"
+				ref={node => input = node}
+				size="40"
+				autoFocus
+				placeholder="Type a GitHub user account name"
+			/>
 			<button type="submit">List repos</button>
 		</form>
 	);
