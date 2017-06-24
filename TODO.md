@@ -24,7 +24,7 @@
 ### jest watch mode
 ### snapshot testing (npm i enzyme-to-json) - first snapshot creation
 ### Testing callbacks (mocks): https://facebook.github.io/jest/docs/mock-functions.html#content
-### Async testing
+### Async testing (http://www.wheresrhys.co.uk/fetch-mock/) - throw error inside the resolved promise to prove it (return promise or use done callback pattern)
 ### code coverage (+ thresholds)
 
 ## Chapter Four: TvShow Catalogue App

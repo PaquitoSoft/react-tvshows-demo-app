@@ -18,7 +18,7 @@ class App extends React.Component {
 
 	onSearch(username) {
 		const url = GITHUB_USER_REPOS_URL.replace(/\{username\}/, username);
-		fetch(url)
+		return fetch(url)
 			.then(response => response.json())
 			.then(repos => {
 				this.setState({ repos });
