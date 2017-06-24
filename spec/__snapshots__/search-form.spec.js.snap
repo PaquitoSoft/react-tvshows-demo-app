@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchForm Should render the form (snapshot) 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    autoFocus={true}
+    name="username"
+    placeholder="Type a GitHub user account name"
+    size="40"
+    type="text"
+  />
+  <button
+    type="submit"
+  >
+    List repos
+  </button>
+</form>
+`;

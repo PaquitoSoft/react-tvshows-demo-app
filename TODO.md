@@ -22,7 +22,7 @@
 ### Jest (npm i jest babel-jest)
 ### enzyme (npm i enzyme react-test-renderer)
 ### jest watch mode
-### snapshot testing (npm i enzyme-to-json)
+### snapshot testing (npm i enzyme-to-json) - first snapshot creation
 ### code coverage (+ thresholds)
 
 ## Chapter Four: TvShow Catalogue App
