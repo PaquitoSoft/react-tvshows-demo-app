@@ -19,9 +19,10 @@
 ### Load async data
 
 ## Chapter Three: Testing React
-### Jest
-### enzyme
-### snapshot testing
+### Jest (npm i jest babel-jest)
+### enzyme (npm i enzyme react-test-renderer)
+### jest watch mode
+### snapshot testing (npm i enzyme-to-json)
 ### code coverage (+ thresholds)
 
 ## Chapter Four: TvShow Catalogue App

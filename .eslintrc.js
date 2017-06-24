@@ -1,7 +1,8 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+		"jest": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
@@ -20,7 +21,7 @@ module.exports = {
             "tab"
         ],
         "linebreak-style": [
-            "error",
+            "off",
             "windows"
         ],
         "quotes": [
