@@ -24,8 +24,8 @@
 ### jest watch mode
 ### snapshot testing (npm i enzyme-to-json) - first snapshot creation
 ### Testing callbacks (mocks): https://facebook.github.io/jest/docs/mock-functions.html#content
-### Async testing (http://www.wheresrhys.co.uk/fetch-mock/) - throw error inside the resolved promise to prove it (return promise or use done callback pattern)
-### code coverage (+ thresholds)
+### Async testing (http://www.wheresrhys.co.uk/fetch-mock/) - throw error inside the resolved promise to prove it (return promise or use done callback pattern) - if I use mount in app tests, I have 100% coverage
+### code coverage (+ thresholds) - change mount/shallow in app tests to see the tests blow up because of coverage
 
 ## Chapter Four: TvShow Catalogue App
 ## Code organization: config, services, plugins (fetch), containers vs. components
