@@ -29,7 +29,7 @@
 
 ## Chapter Four: TvShow Catalogue App
 ## Code organization: config, services, plugins (fetch), containers vs. components
-### Home page (component local state): lifecycle hooks
+### Home page (webpack style-loader + css-loader, component local state): lifecycle hooks
 ### Routing (react-router + redux-first-router after Redux)
 ### TvShow page + Season page
 ### Code splitting (AsyncRoute)
