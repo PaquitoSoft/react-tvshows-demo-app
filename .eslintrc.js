@@ -33,7 +33,7 @@ module.exports = {
             "always"
         ],
 		"no-debugger": 1,
-        "no-console": 1,
+        "no-console": 0,
         "react/jsx-uses-react": "error",
         "react/jsx-uses-vars": "error",
         "react/prop-types": "error"

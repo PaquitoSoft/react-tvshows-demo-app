@@ -19,3 +19,7 @@ export function getUpcomingTvShows(page = 1) {
 export function getNowPlayingTvShows(page = 1) {
 	return getJson(`${BASE_API_URL}/tv/on_the_air?page=${page}&api_key=${API_KEY}`, { ttl: 30 });
 }
+
+export function getTvShowDetails(tvShowId) {
+	return getJson(`${BASE_API_URL}/tv/${tvShowId}?api_key=${API_KEY}`, { ttl: 60 * 24 });
+}

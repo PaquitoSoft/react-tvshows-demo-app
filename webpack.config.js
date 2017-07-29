@@ -16,10 +16,15 @@ module.exports = {
 	devServer: {
 		contentBase: path.resolve(__dirname, 'src'),
 		compress: true,
+		historyApiFallback: true,
 		overlay: {
 			warnings: false,
 			errors: true
 		}
+	},
+
+	resolve: {
+		modules: ['node_modules', 'src/app']
 	},
 
 	module: {

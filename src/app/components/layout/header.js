@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
 	return (
@@ -8,21 +9,21 @@ function Header() {
 					<div className="left">
 						<ul className="primary">
 							<li className="logo">
-								<a href="/">
+								<Link to="/">
 									<img width="91" height="81" src="/images/logo/91x81.png" srcSet="/images/logo/91x81.png 1x, /images/logo/182x162.png 2x, /images/logo/273x243.png 3x" />
-								</a>
+								</Link>
 							</li>
 							<li>
-								<a href="/discover?language=en">Popular</a>
+								<Link to="/discover?language=en">Popular</Link>
 							</li>
 							<li>
-								<a href="/movie?language=en">Top Rated</a>
+								<Link to="/movie?language=en">Top Rated</Link>
 							</li>
 							<li>
-								<a href="/tv?language=en">Upcoming</a>
+								<Link to="/tv?language=en">Upcoming</Link>
 							</li>
 							<li>
-								<a href="/person?language=en">Now Playing</a>
+								<Link to="/person?language=en">Now Playing</Link>
 							</li>
 						</ul>
 					</div>

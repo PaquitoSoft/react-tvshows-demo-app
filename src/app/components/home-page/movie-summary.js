@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { shape, number, string } from 'prop-types';
 
 import { getPosterUrl } from '../../plugins/url-builder';
@@ -14,22 +15,21 @@ import { getPosterUrl } from '../../plugins/url-builder';
 */
 
 function MovieSummary({ movie }) {
-	console.log(movie);
 	const movieUrl = `/movie/${movie.id}`;
 
 	return (
 		<div className="item poster card">
 			<div className="image_content">
-				<a href={movieUrl} id={`tv_${movie.id}`} className="result" title="Supernatural" alt="Supernatural">
+				<Link to={movieUrl} id={`tv_${movie.id}`} className="result" title="Supernatural" alt="Supernatural">
 					<img 
 						className="poster fade lazyautosizes lazyloaded" 
 						src={getPosterUrl(movie.poster_path, 184)} 
 					/>
-				</a>
+				</Link>
 			</div>
 			<div className="info">
 				<p className="flex">
-					<a id={`tv_${movie.id}`} className="title result" href={movieUrl} title="Supernatural" alt="Supernatural">{movie.name}</a>
+					<Link id={`tv_${movie.id}`} className="title result" to={movieUrl} title="Supernatural" alt="Supernatural">{movie.name}</Link>
 					<span className="vote_average">{movie.vote_average}<span id="rating_52570e0a19c295731c001733" className="glyphicons glyphicons-star x1 rating tv"></span></span>
 				</p>
 				<p className="meta flex">
@@ -38,7 +38,7 @@ function MovieSummary({ movie }) {
 				</p>
 				<p className="overview">{movie.overview}</p>
 				<p className="view_more">
-					<a id={`tv_${movie.id}`} className="result" href={movieUrl} title="Supernatural" alt="Supernatural">More Info</a>
+					<Link id={`tv_${movie.id}`} className="result" to={movieUrl} title="Supernatural" alt="Supernatural">More Info</Link>
 				</p>
 			</div>
 		</div>
