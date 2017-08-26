@@ -1,6 +1,7 @@
 import React from 'react';
 import { shape, string } from 'prop-types';
 import { Link } from 'react-router-dom';
+import { getPosterUrl } from 'plugins/url-builder';
 
 function TvShowMainInfo({ movie }) {
 	return (
@@ -11,8 +12,9 @@ function TvShowMainInfo({ movie }) {
 						<div className="image_content">
 							<img 
 								className="poster fade lazyautosizes lazyloaded" 
-								data-sizes="auto" 
-								data-src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/cFcZYgPRFZdBkA7EsxHz5Cb8x5.jpg" data-srcset="https://image.tmdb.org/t/p/w300_and_h450_bestv2/cFcZYgPRFZdBkA7EsxHz5Cb8x5.jpg 1x, https://image.tmdb.org/t/p/w600_and_h900_bestv2/cFcZYgPRFZdBkA7EsxHz5Cb8x5.jpg 2x" alt="Doctor Who" sizes="300px" srcSet="https://image.tmdb.org/t/p/w300_and_h450_bestv2/cFcZYgPRFZdBkA7EsxHz5Cb8x5.jpg 1x, https://image.tmdb.org/t/p/w600_and_h900_bestv2/cFcZYgPRFZdBkA7EsxHz5Cb8x5.jpg 2x" src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/cFcZYgPRFZdBkA7EsxHz5Cb8x5.jpg" 
+								alt={movie.name} 
+								srcSet={`${getPosterUrl(movie.poster_path, 300)} 1x, ${getPosterUrl(movie.poster_path, 600)} 2x`} 
+								src={getPosterUrl(movie.poster_path, 300)}
 							/>
 						</div>
 					</div>
@@ -56,26 +58,8 @@ function TvShowMainInfo({ movie }) {
 							<div className="pad">
 								<h3 dir="auto">Overview</h3>
 								<div className="overview" dir="auto">
-									<p>The Doctor looks and seems human. He's handsome, witty, and could be mistaken for just another man in the street. But he is a Time Lord: a 900 year old alien with 2 hearts, part of a gifted civilization who mastered time travel. The Doctor saves planets for a living – more of a hobby actually, and he's very, very good at it. He's saved us from alien menaces and evil from before time began – but just who is he?</p>
+									<p>{movie.overview}</p>
 								</div>
-								<h3 dir="auto" className="featured">Featured Crew</h3>
-								<ol className="people no_image">
-									<li className="profile">
-										<p><a href="/person/57293-sydney-newman?language=en">Sydney Newman</a></p>
-										<p className="character">Creator</p>
-									</li>
-									<li className="profile">
-										<p><a href="/person/1213434-c-e-webber?language=en">C. E. Webber</a></p>
-										<p className="character">Creator</p>
-									</li>
-									<li className="profile">
-										<p><a href="/person/1213433-donald-wilson?language=en">Donald Wilson</a></p>
-										<p className="character">Creator</p>
-									</li>
-									<li className="profile"></li>
-									<li className="profile"></li>
-									<li className="profile"></li>
-								</ol>
 							</div>
 						</section>
 					</div>
@@ -88,7 +72,8 @@ function TvShowMainInfo({ movie }) {
 TvShowMainInfo.propTypes = {
 	movie: shape({
 		name: string,
-		first_air_date: string
+		first_air_date: string,
+		overview: string
 	})
 };
 
