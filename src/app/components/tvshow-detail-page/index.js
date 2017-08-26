@@ -21,7 +21,7 @@ class TvShowDetailPage extends React.Component {
 	}
 
 	componentWillMount() {
-		getTvShowDetails(1911)
+		getTvShowDetails(this.props.match.params.movieId)
 			.then(movie => this.setState({ movie }))
 			.catch(err => {
 				console.error(err);
